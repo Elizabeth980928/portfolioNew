@@ -1,0 +1,574 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+/* //////////////////////////////////////////////////////////// */
+
+
+
+
+
+.nav {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    height: 500px;
+    background-image: url("bg-masthead.jpg");
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ .menu {
+    width: 450px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #161919;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.nav span {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: wh;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* logo image */
+img {
+
+    width: 50px;
+    margin-top: 1px;
+}
+
+.containerMenu {
+
+    height: 700px;
+    border-radius: 5px;
+}
+
+/* navigation */
+.menuNav {
+
+    height: 120px;
+    border-radius: 5px;
+}
+
+.n {
+    border-top: 1px solid;
+    border-spacing: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.menuNav ul {
+    margin-right: 10px;
+    float: right;
+    font-family: sans-serif;
+}
+
+.menuNav ul li {
+    display: inline;
+    line-height: 70px;
+}
+
+.menuNav ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: .3s;
+}
+
+.menuNav ul li::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transform: scale(0);
+    opacity: 0;
+    transition: .3s;
+    z-index: -1;
+}
+
+.menuNav ul li a {
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.menuNav ul li a:hover {
+
+    color: #fff;
+
+}
+
+.menuNav ul li a:hover::before {
+
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.menuNav ul li a:hover ::after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+
+/* first container for navigation */
+
+
+
+
+/* background image */
+.codeImage {
+    height: 300px;
+    border-radius: 50%;
+    width: 200px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.backgroundimage {
+
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*names*/
+.personalDetails .name h5 {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 65%);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: rgb(226, 181, 68);
+    border-radius: 10px;
+}
+
+/* Surname */
+.personalDetails .name p {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, 160%);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: rgb(226, 181, 68);
+}
+
+/* profile picture */
+
+
+/* ...............................ABOUT CSS........................... */
+
+.AboutContainer {
+    height: 800px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 5px;
+    box-sizing:content-box;
+}
+
+
+.profileAbout {
+    padding: 15px;
+    height: 250px;
+    border-radius: 50%;
+    border: #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profileAboutContainer {
+    justify-content: center;
+    padding-left: -80px;
+    display: flex;
+}
+
+.headerAbout1 {
+    font-family: sans-serif;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 70px;
+
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 30px 60px;
+    border: none;
+    margin-left: 250px;
+    border-radius: 5px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    border-radius: 2px;
+}
+
+.pAbout1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(58, 53, 53);
+    font: size 40px;
+    margin-top: 20px;
+
+}
+
+.pAbout2 {
+    color: rgb(58, 53, 53);
+    font-family: sans-serif;
+    margin-top: 20px;
+
+}
+
+
+
+
+/* ------------------Skills ----------------------------------- */
+
+
+.containerSkills{
+    background-color:  #1D809F;
+    height: 700px;
+    justify-content: center;
+    
+    
+}
+
+.h1Skills{
+    color: goldenrod;
+    font-family: sans-serif;
+    font-size: large;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+
+.h2Skills{
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    font-family:sans-serif;
+    color: white;
+}
+
+
+
+/* contact us */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  display:flex;
+
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  border-radius: 2px;
+}
+
+
+.containerContact {
+  margin: 0;
+    background-color: beige;
+  padding: 30px;
+  height: 750px;
+  box-sizing: border-box;
+
+  
+}
+
+.img2{
+  height: 300px;
+  border-radius: 50%;
+  border: #ccc;
+  display: flex;
+  
+}
+.headingAddress{
+  font-family: sans-serif;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.list1{
+  font-family: sans-serif;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  padding: 20px;
+  padding-top: 10px;
+
+}
+
+ .list2 {
+
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.list2 li {
+  display:inline;
+  line-height: 100px;
+  justify-content: space-between;
+
+}
+
+ .list2 li a {
+  color: #04AA6D;;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.list2 li a:hover {
+
+  color: #5da98d;
+    
+}
+
+/* reference */
+
+.card-container, .front, .back {
+	width: 20rem;
+	height: 20rem;
+}
+.card-container {
+	margin: 5rem;
+}
+.front, .back {
+	box-sizing: border-box;
+	padding: 2rem;
+	border-radius: 4px;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
+
+	font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* front side  */ 
+.front {
+ 
+    background-color: beige;
+    color: black;
+
+}
+
+.front img{
+    
+    border-radius: 50%;
+}
+
+/* back side  */ 
+.back {
+background-color:  #1D809F;
+
+}
+
+.card-container {
+	position: relative;
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	overflow: hidden;
+	transition: transform .8s ease;
+}
+.back {
+	transform: rotateY(180deg);
+}
+.card-container:hover .front {
+	transform: rotateY(-180deg);
+}
+.card-container:hover .back {
+	transform: rotateY(0deg);
+}
+
+.card-container {
+	perspective: 75rem;
+}
+
+/* bottom card */
+
+.bottom-card{
+    background-color: beige;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0);
+
+}
+
+.oslinImg{
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 110px;
+    display: flex;
+}
+.title-oslin{
+  margin-left: 150px;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
